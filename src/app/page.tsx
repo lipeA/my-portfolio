@@ -1,9 +1,12 @@
 "use client";
+import Perfil from "@/components/Perfil";
+import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
+    <div className="header">
+      <Perfil />
+      <AboutMe />
     </div>
   );
 }

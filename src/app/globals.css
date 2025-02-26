@@ -4,20 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: "Asap", serif;
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 750px;
+  padding-top: 6rem;
+  height: max-content;
+  background-image: url("/img/Background_Contacts.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

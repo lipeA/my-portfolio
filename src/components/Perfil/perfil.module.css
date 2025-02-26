@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: flex-end;
+}
+.perfilContent {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #e3646e;
+  border-radius: 100px;
+  padding: 5px;
+}
+.perfil {
+  background-color: aqua;
+  border-radius: 100px;
+  max-width: 100px !important;
+  height: 95px;
+}
+.icon {
+  margin-top: -15px;
+}

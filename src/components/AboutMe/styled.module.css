@@ -1,0 +1,31 @@
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.welcome {
+  color: #c0c4ce;
+  font-size: 20px;
+  font-family: "Inconsolata";
+}
+.name {
+  color: #e3646e;
+}
+.title {
+  font-size: 56px;
+  font-weight: 600;
+  color: #e2e4e9;
+  font-family: "Asap";
+}
+.description {
+  color: #878ea1;
+  font-size: 14px;
+  font-family: "Maven Pro";
+  text-align: center;
+  max-width: 680px;
+}
