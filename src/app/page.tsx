@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="header">
       <Perfil />
-      <AboutMe />
+      <AboutMe welcome="Hello World! Meu nome é Felipe Assis e sou" />
     </div>
   );
 }
