@@ -14,6 +14,15 @@
   --font-Inconsolata: "Inconsolata", monospace;
   --font-MavenPro: "Maven Pro", sans-serif;
   --font-Asap: "Asap", sans-serif;
+
+  --color-primary: #e3646e;
+  --color-secondary: #c0c4ce;
+  --color-tertiary: #e2e4e9;
+  --color-quaternary: #878ea1;
+  --color-quinary: #bb72e9;
+
+  --bg-primary: #292c34;
+  --bg-secondary: #16181d;
 }
 
 .header {

@@ -9,7 +9,7 @@ interface SoftSkillsProps {
 
 export default function SoftSkills({ iconeSoft, titulo }: SoftSkillsProps) {
   return (
-    <div className="flex items-center justify-center gap-3 px-4 py-3 rounded-full bg-[#292C34]">
+    <div className="flex items-center justify-center gap-3 px-4 py-3 rounded-full bg-bgPrimary">
       <Image
         src={iconeSoft}
         alt="Imagem dinâmica"

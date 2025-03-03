@@ -71,11 +71,11 @@ export default function AboutMe({ welcome }: AboutMeProps) {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       <div className="flex flex-col items-center justify-center w-full mt-4 h-[220px]">
-        <p className="text-[#C0C4CE] h-[30px] font-primary">{welcomeText}</p>
-        <h1 className="font-tercery text-[#E2E4E9] text-[56px] max-md:text-[40px] max-md:w-full px-3 text-center">
+        <p className="text-secondary h-[30px] font-primary">{welcomeText}</p>
+        <h1 className="font-tercery text-tercery text-[56px] max-md:text-[40px] max-md:w-full px-3 text-center">
           Desenvolvedor Fullstack
         </h1>
-        <p className="font-segundary text-[#878EA1] text-[14px] w-[680px] text-center max-md:w-full px-3">
+        <p className="font-segundary text-quaternary text-[14px] w-[680px] text-center max-md:w-full px-3">
           Minha paixão pela tecnologia me impulsiona a desenvolver sistemas
           inovadores, criando aplicações funcionais que resolvem desafios
           complexos com criatividade e precisão.

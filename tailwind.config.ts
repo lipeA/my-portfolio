@@ -11,6 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        bgPrimary: "var(--bg-primary)",
+        bgSecondary: "var(--bg-secondary)",
+
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        tercery: "var(--color-tertiary)",
+        quaternary: "var(--color-quaternary)",
+        quinary: "var(--color-quinary)",
       },
       fontFamily: {
         primary: "var( --font-Inconsolata)",
