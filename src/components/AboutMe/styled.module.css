@@ -1,3 +1,11 @@
+.styled_aboutMeSection__UcXcy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .aboutMeContainer {
   display: flex;
   flex-direction: column;
@@ -5,13 +13,13 @@
   justify-content: center;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
 .welcome {
   color: #c0c4ce;
   font-size: 20px;
   font-family: "Inconsolata";
+  min-height: 40px;
 }
 .name {
   color: #e3646e;
@@ -28,4 +36,30 @@
   font-family: "Maven Pro";
   text-align: center;
   max-width: 680px;
+}
+.softSkillsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  width: fit-content;
+  padding: 9px 15px;
+}
+
+@media (max-width: 768px) {
+  .aboutMeContainer {
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+  }
+  .title {
+    font-size: 30px;
+  }
+
+  .softSkillsContainer {
+    overflow-x: scroll;
+  }
+  .description {
+    max-width: 300px;
+  }
 }

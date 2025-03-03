@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        primary: "var( --font-Inconsolata)",
+        segundary: "var( --font-MavenPro)",
+        tercery: " var( --font-Asap)",
+      },
     },
   },
   plugins: [],

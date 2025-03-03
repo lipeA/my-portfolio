@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-Inconsolata: "Inconsolata", monospace;
+  --font-MavenPro: "Maven Pro", sans-serif;
+  --font-Asap: "Asap", sans-serif;
+}
+
 .header {
   width: 100%;
   display: flex;

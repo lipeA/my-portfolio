@@ -1,6 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import styled from "./styled.module.css";
+import SoftSkills from "../SoftSkills";
+
+import IconeHtml from "../../../public/img/iconeHTML.png";
+import IconeReact from "../../../public/img/iconeReact.png";
+import IconeReactNative from "../../../public/img/react-native.png";
+import IconeType from "../../../public/img/iconeType.png";
+import IconeCss from "../../../public/img/iconeCss.png";
+import IconePhp from "../../../public/img/php.png";
+import IconeGit from "../../../public/img/git.png";
+import IconeLaravel from "../../../public/img/laravel.svg";
 
 interface AboutMeProps {
   welcome: string;
@@ -12,7 +22,6 @@ export default function AboutMe({ welcome }: AboutMeProps) {
   const [displayedText, setDisplayedText] = useState("");
   const [welcomeText, setWelcomeText] = useState("");
 
-  // Função de digitação com opção de apagar
   const typeWriter = (
     text: string,
     setText: (value: string) => void,
@@ -27,7 +36,7 @@ export default function AboutMe({ welcome }: AboutMeProps) {
         i++;
         setTimeout(type, delay);
       } else if (callback) {
-        setTimeout(() => erase(), 1000); // Espera 1s antes de apagar
+        setTimeout(() => erase(), 1000);
       }
     };
 
@@ -37,7 +46,7 @@ export default function AboutMe({ welcome }: AboutMeProps) {
         i--;
         setTimeout(erase, eraseDelay);
       } else if (callback) {
-        setTimeout(callback, 500); // Pequena pausa antes de repetir
+        setTimeout(callback, 500);
       }
     };
 
@@ -46,12 +55,12 @@ export default function AboutMe({ welcome }: AboutMeProps) {
 
   useEffect(() => {
     const loop = () => {
-      typeWriter(fullText, setDisplayedText, 80, 40, () => {
+      typeWriter(welcome, setWelcomeText, 100, 40, () => {
         typeWriter(welcome, setWelcomeText, 100, 50, loop);
       });
     };
 
-    loop(); // Inicia o loop
+    loop();
 
     return () => {
       setDisplayedText("");
@@ -60,15 +69,28 @@ export default function AboutMe({ welcome }: AboutMeProps) {
   }, [welcome]);
 
   return (
-    <div className={styled.aboutMeContainer}>
-      <p className={styled.welcome}>{displayedText}</p>
-      <p className={styled.welcome}>{welcomeText}</p>
-      <h1 className={styled.title}>Desenvolvedor Fullstack</h1>
-      <p className={styled.description}>
-        Minha paixão pela tecnologia me impulsiona a desenvolver sistemas
-        inovadores, criando aplicações funcionais que resolvem desafios
-        complexos com criatividade e precisão.
-      </p>
+    <div className="flex flex-col items-center justify-center w-full">
+      <div className="flex flex-col items-center justify-center w-full mt-4 h-[220px]">
+        <p className="text-[#C0C4CE] h-[30px] font-primary">{welcomeText}</p>
+        <h1 className="font-tercery text-[#E2E4E9] text-[56px] max-md:text-[40px] max-md:w-full px-3 text-center">
+          Desenvolvedor Fullstack
+        </h1>
+        <p className="font-segundary text-[#878EA1] text-[14px] w-[680px] text-center max-md:w-full px-3">
+          Minha paixão pela tecnologia me impulsiona a desenvolver sistemas
+          inovadores, criando aplicações funcionais que resolvem desafios
+          complexos com criatividade e precisão.
+        </p>
+      </div>
+      <div className="flex flex-row items-center justify-center w-full mt-8 gap-5 max-md:grid max-md:grid-cols-2 max-md:gap-3">
+        <SoftSkills titulo="HTML" iconeSoft={IconeHtml} />
+        <SoftSkills titulo="CSS" iconeSoft={IconeCss} />
+        <SoftSkills titulo="TYPESCRIPT" iconeSoft={IconeType} />
+        <SoftSkills titulo="PHP" iconeSoft={IconePhp} />
+        <SoftSkills titulo="GIT" iconeSoft={IconeGit} />
+        <SoftSkills titulo="REACT" iconeSoft={IconeReact} />
+        <SoftSkills titulo="REACT NATIVE" iconeSoft={IconeReactNative} />
+        <SoftSkills titulo="LARAVEL" iconeSoft={IconeLaravel} />
+      </div>
     </div>
   );
 }

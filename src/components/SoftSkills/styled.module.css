@@ -1,0 +1,22 @@
+.softSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 10px;
+  background-color: #292c34;
+  border-radius: 100px;
+  width: fit-content;
+  padding: 9px 15px;
+  box-shadow: 7px 7px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.softSkills img {
+  width: 20px;
+  height: 20px;
+}
+.softName {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
