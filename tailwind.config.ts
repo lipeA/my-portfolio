@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
         bgPrimary: "var(--bg-primary)",
         bgSecondary: "var(--bg-secondary)",
+        bgTertiary: "var( --bg-tertiary)",
 
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
