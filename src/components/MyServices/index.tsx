@@ -4,14 +4,14 @@ import Serve from "../../../public/img/SERVE.png";
 export default function MyServices() {
   return (
     <>
-      <div className="w-full h-[480px] flex justify-center items-center flex-col bg-bgTertiary">
+      <div className="w-full h-[480px] flex justify-center items-center flex-col bg-bgTertiary max-md:h-fit max-md:p-2 max-md:pb-10 max-md:pt-14">
         <div>
-          <h1 className="text-[18px] text-primary font-segundary">
+          <h1 className="text-[18px] text-primary font-segundary max-md:text-[24px]">
             Meus Serviços
           </h1>
         </div>
 
-        <div className="flex justify-center items-center gap-10 mt-10">
+        <div className="flex justify-center items-center gap-10 mt-10 max-md:flex-col max-md:px-5 ">
           <div className="flex flex-col justify-center items-start gap-5 mt-10 border border-tercery p-5 rounded-lg">
             <div>
               <Image src={PC} alt="PC" />

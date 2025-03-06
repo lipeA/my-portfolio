@@ -22,7 +22,7 @@ export default function Contact() {
           target="_blank"
           className="hover:scale-105 transition-transform duration-300 ease-in-out"
         >
-          <div className="w-[400px] flex justify-between items-center gap-4 border border-secondary rounded-[10px] px-3 mt-4 bg-bgPrimary">
+          <div className="w-[400px] flex justify-between items-center gap-4 border border-secondary rounded-[10px] px-3 mt-4 bg-bgPrimary max-md:w-full">
             <div className="flex justify-center items-center gap-4  p-4">
               <Image src={Linkdin} alt="Linkdin" />
               <p className="text-secondary text-[16px] font-segundary">
@@ -39,7 +39,7 @@ export default function Contact() {
           target="_blank"
           className="hover:scale-105 transition-transform duration-300 ease-in-out"
         >
-          <div className="w-[400px] flex justify-between items-center gap-4 border border-secondary rounded-[10px] px-3 mt-4 bg-bgPrimary">
+          <div className="w-[400px] flex justify-between items-center gap-4 border border-secondary rounded-[10px] px-3 mt-4 bg-bgPrimary max-md:w-full">
             <div className="flex justify-center items-center gap-4  p-4">
               <Image src={Git} alt="Linkdin" className="-ml-1" />
               <p className="text-secondary text-[16px] font-segundary ">

@@ -17,16 +17,16 @@ export default function Home() {
         <Image
           src={Arrow}
           alt="Arrow"
-          className="w-10 h-10 animate-bounce mt-28"
+          className="w-10 h-10 animate-bounce mt-28 max-md:mt-10"
         />
       </div>
-      <div className="w-full h-[750px] flex justify-center items-center flex-col bg-bgSecondary">
+      <div className="w-full h-[750px] flex justify-center items-center flex-col bg-bgSecondary max-md:h-auto">
         <ProjectsSection />
       </div>
       <div>
         <MyServices />
       </div>
-      <div className="w-full h-[750px] flex justify-center items-center flex-col bg-[url('/img/Background_Contacts.png')] bg-cover bg-center">
+      <div className="w-full h-[750px] flex justify-center items-center flex-col bg-[url('/img/Background_Contacts.png')] bg-cover bg-center max-md:h-auto pt-10 pb-10">
         <Contact />
       </div>
     </>
