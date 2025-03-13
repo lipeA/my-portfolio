@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import styled from "./styled.module.css";
 import SoftSkills from "../SoftSkills";
 
 import IconeHtml from "../../../public/img/iconeHTML.png";
@@ -17,9 +16,6 @@ interface AboutMeProps {
 }
 
 export default function AboutMe({ welcome }: AboutMeProps) {
-  const fullText = "Hello World! Meu nome é Felipe Assis e sou";
-
-  const [displayedText, setDisplayedText] = useState("");
   const [welcomeText, setWelcomeText] = useState("");
 
   const typeWriter = (
@@ -63,7 +59,6 @@ export default function AboutMe({ welcome }: AboutMeProps) {
     loop();
 
     return () => {
-      setDisplayedText("");
       setWelcomeText("");
     };
   }, [welcome]);

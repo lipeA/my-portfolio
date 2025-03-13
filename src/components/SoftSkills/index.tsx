@@ -1,9 +1,9 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styled from "./styled.module.css";
 
 interface SoftSkillsProps {
-  iconeSoft: string | any;
+  iconeSoft: string | StaticImageData;
   titulo: string;
 }
 
