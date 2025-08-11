@@ -4,13 +4,15 @@ interface CardProps {
   title: string;
   text: string;
   image: string | StaticImageData;
+  link: string;
 }
 
-export default function Card({ image, title, text }: CardProps) {
+export default function Card({ image, title, text, link }: CardProps) {
   return (
     <>
       <a
-        href="https://github.com/lipeA/react-native-participantes"
+        href={link}
+        rel="noopener noreferrer"
         target="_blank"
         className="hover:scale-105 transition-transform duration-300"
       >

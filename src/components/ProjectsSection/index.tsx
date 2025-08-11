@@ -1,6 +1,9 @@
 import Card from "../Card";
 import Image from "../../../public/img/image 2.png";
 import Inhere from "../../../public/img/inhere.jpg";
+import caseStudy from "../../../public/img/caseStudy.png";
+import OnePiece from "../../../public/img/projeto-one-piece.png";
+
 export default function ProjectsSection() {
   return (
     <div className=" w-full flex flex-col justify-center items-center p-10 max-md:overflow-x-hidden  max-md:p-1 max-md:mt-10 max-md:pb-28">
@@ -17,26 +20,31 @@ export default function ProjectsSection() {
           image={Inhere}
           title=" app em React Native para gerenciar participantes"
           text="No processo, trabalhei com useState, FlatList, Alert e outros componentes do próprio React Native, buscando deixar a interface limpa e intuitiva"
+          link="https://github.com/lipeA/react-native-participantes"
+        />
+        <Card
+          image={caseStudy}
+          title="Clone de um projeto de case study para o curso de React"
+          text="Projeto com o proposito de trabalhar com Next.js junto com TailwindCSs."
+          link="https://github.com/lipeA/Case-Study"
+        />
+        <Card
+          image={OnePiece}
+          title="Projeto de Landin Page One Piece."
+          text=" O tema para a landinpage escolhi o anime ONE PIECE, que é um dos meus favoritos."
+          link="https://github.com/lipeA/Landinpage-OnePiece"
         />
         <Card
           image={Image}
           title="Projeto 01"
           text="informações sobre o projeto "
+          link="#"
         />
         <Card
           image={Image}
           title="Projeto 01"
           text="informações sobre o projeto "
-        />
-        <Card
-          image={Image}
-          title="Projeto 01"
-          text="informações sobre o projeto "
-        />
-        <Card
-          image={Image}
-          title="Projeto 01"
-          text="informações sobre o projeto "
+          link="#"
         />
       </div>
     </div>
